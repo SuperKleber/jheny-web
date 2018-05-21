@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jhenifer Taborga</title>
+    <link rel="stylesheet" href="jhenifer.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Monda" rel="stylesheet">
+  </head>
+  <body>
+     <header class="header" id="header">
+       <a href="index.html" class="logotipo" id="logotipo">
+          Jhenifer Taborga
+       </a>
+       <nav class="menu" id="menu">
+         <ol class="olobras">
+           <a class="obras a" href="obras.html"> Obras </a>
+         </ol>
+         <ol class="olcontacto">
+            <a class="contacto a" href="#contacto" > Contacto</a>
+         </ol>
+       </nav>
+     </header>
+     <script>
+          const logo = document.getElementById("logotipo")
+          const a= document.getElementsByClassName("a")
+          const menu= document.getElementById("menu")
+          const logoMover= (ev) =>
+          {
+            let scrolly=((480-window.scrollY)/500)**2;
+           // logo.style.transform = "translateY("+window.scrollY+"px)"
+           logo.style.color="rgba(255,255,255,+"+scrolly+")"
+           logo.style.background="rgba(0,0,0,+"+scrolly+")"
+           a[0].style.color="rgba(255,255,255,+"+scrolly+")"
+           a[1].style.color="rgba(255,255,255,+"+scrolly+")"
+           menu.style.background="rgba(0,0,0,+"+scrolly+")"
+           window.scrollY>=400? logo.style.display="none" :logo.style.display="block" ;
+
+          }
+          window.addEventListener("scroll",logoMover)
+     </script>
+  </body>
+</html>

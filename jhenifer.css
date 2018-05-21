@@ -1,0 +1,62 @@
+
+/* Estilos del HEader */
+body
+{
+  background: black;
+}
+.header
+{
+
+  background-image: url("images/background.jpg");
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+}
+.logotipo
+{
+  color: white;
+  font-size: 70px;
+  font-family: "Courgette";
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  padding:10px 20px 10px 30px;
+  border-radius:20%;
+  height: 1.5em;
+  transition: .1s;
+  position: fixed;
+  /* NOTA: Puede ser que las fuentes no estén bien */
+}
+
+/* MENU */
+.menu
+{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  height: 5em;
+  position: fixed;
+  right: 0;
+}
+.menu ol a
+{
+  font-size: 110%;
+  font-family: "Monda";
+  text-decoration:  overline;
+  color: white;
+
+}
+.menu .olobras
+{
+  padding-left: 5px;
+}
+.menu .olcontacto
+{
+  padding-right:  5px;
+}
+body
+{
+  height: 5000px;
+}
